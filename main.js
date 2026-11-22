@@ -48,6 +48,15 @@ Object.assign(EN, {
   pjNoteC:"Approved 3D design of a day-surgery centre we executed in Dubai.",
   imgNote:"Some images are illustrative; project photos are from our own sites"
 });
+Object.assign(EN, {
+  ceKicker:"Completion certificates", ceTitle:"Delivered projects, officially certified.",
+  ceP:"Completion certificates issued by Dubai government authorities in the name of Shams Al Nahar Building Contracting, after meeting the authority's requirements.",
+  ceL1:"Authority", ceV1:"General Directorate of Civil Defence — Dubai",
+  ceL2:"Certificate", ceV2:"Building Completion Certificate",
+  ceL3:"Project", ceV3:"Villa converted to a clinic — Jumeirah 1",
+  ceL4:"Issue date", ceNote:"Owner names and plot numbers are hidden to protect our clients' privacy.",
+  ceTag:"View full certificate", nCerts:"Certificates"
+});
 const PJ_NOTE = { v:["صور حديثة من مواقعنا في دبي، من أغسطس إلى نوفمبر 2026.", EN.pjNoteV], c:["التصميم ثلاثي الأبعاد المعتمد لمركز جراحة اليوم الواحد الذي نفّذناه في دبي.", EN.pjNoteC] };
 const PJ = {
   v: [["v03","فيلا سكنية — واجهة كلاسيكية","Residential villa — classic façade"],["v11","فيلا حديثة — دبي","Modern villa — Dubai"],["v07","فيلا سكنية — أعمال التشطيب","Residential villa — finishing works"],

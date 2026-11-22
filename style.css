@@ -390,3 +390,26 @@ html[dir=rtl] .to-top i{transform:translateY(2px) rotate(-45deg)}
   .pj-tabs{width:100%}.pj-tabs button{flex:1;padding:10px 8px;font-size:13px}
   .lb button{width:42px;height:42px;font-size:22px}.lb-p{left:8px}.lb-n{right:8px}
 }
+
+/* completion certificates */
+.certs{background:#fff}
+.certs-in{display:grid;grid-template-columns:.95fr 1.05fr;gap:90px;align-items:center}
+.certs-text .h2{margin-bottom:24px}
+.cert-meta{margin:34px 0 22px;border-top:1px solid var(--rule)}
+.cert-meta div{display:grid;grid-template-columns:150px 1fr;gap:20px;padding:16px 0;border-bottom:1px solid var(--rule)}
+.cert-meta dt{font:400 14px var(--h);color:var(--muted)}
+.cert-meta dd{font:500 16px var(--h);color:var(--navy)}
+.cert-note{font-size:14px}
+.cert-card{position:relative;display:block;padding:18px;background:var(--ice);border:1px solid var(--rule);border-radius:6px;box-shadow:0 40px 80px rgba(7,21,47,.14);transform:rotate(-1.2deg);transition:transform .8s var(--ease),box-shadow .8s var(--ease)}
+html[dir=ltr] .cert-card{transform:rotate(1.2deg)}
+.cert-card:hover,html[dir=ltr] .cert-card:hover{transform:rotate(0) translateY(-6px);box-shadow:0 50px 100px rgba(7,21,47,.2)}
+.cert-card img{width:100%;border-radius:2px}
+.cert-tag{position:absolute;bottom:34px;inset-inline-start:34px;background:var(--navy);color:#fff;font:500 13.5px var(--h);padding:10px 18px;border-radius:100px;transition:background .4s}
+.cert-card:hover .cert-tag{background:var(--royal)}
+@media (max-width:1100px){.certs-in{grid-template-columns:1fr;gap:56px}}
+@media (max-width:700px){
+  .cert-meta div{grid-template-columns:110px 1fr;gap:12px}
+  .cert-card{padding:10px;transform:none}
+  html[dir=ltr] .cert-card{transform:none}
+  .cert-tag{bottom:20px;inset-inline-start:20px;font-size:12.5px;padding:8px 14px}
+}
