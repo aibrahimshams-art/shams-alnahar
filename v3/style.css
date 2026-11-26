@@ -434,3 +434,36 @@ html[dir=ltr] .vs-tag.a{right:auto;left:max(24px,calc((100vw - 1320px)/2))}html[
 .vstage.ready~.hero-bottom .vs-hint,.hero.vs-ready .vs-hint{opacity:1}
 @media (max-width:760px){.vs-tag{top:96px;font-size:11.5px}.vs-hint{font-size:12px}.vstage picture{top:-24%;bottom:auto;height:118%}}
 @media (prefers-reduced-motion:reduce){.vstage img{animation:none}}
+
+/* AI hero label (Ahmed 26-11: «تصور توضيحي») */
+.vs-concept{position:absolute;z-index:3;top:124px;left:50%;transform:translateX(-50%);font:400 11px var(--h);letter-spacing:.08em;color:rgba(255,255,255,.78);background:rgba(7,21,47,.38);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);padding:4px 11px;border-radius:100px;opacity:0;transition:opacity .6s;pointer-events:none;white-space:nowrap}
+.vstage.ready .vs-concept,.vstage.live .vs-concept{opacity:1}
+@media (max-width:760px){.vs-concept{top:auto;bottom:118px;font-size:10.5px}}
+
+/* film music toggle (Ahmed 26-11: calm music, no voice) */
+.snd{position:absolute;z-index:3;bottom:18px;inset-inline-end:18px;display:flex;align-items:center;gap:8px;font:500 13px var(--h);color:#fff;background:rgba(7,21,47,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.22);padding:9px 16px 9px 14px;border-radius:100px;cursor:pointer;transition:background .3s}
+.snd:hover{background:rgba(29,78,216,.75)}
+.snd svg{width:18px;height:18px;fill:none;stroke:#fff;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.snd .spk{fill:#fff}.snd .on{display:none}.snd.is-on .on{display:block}.snd.is-on .off{display:none}
+@media (max-width:700px){.snd{bottom:10px;inset-inline-end:10px;font-size:12px;padding:7px 12px}}
+
+/* mobile = same composition as desktop (Ahmed 26-11): text over the sky, villa fully visible below it */
+@media (max-width:760px){
+  .vstage picture{top:12%;bottom:auto;height:100%}
+  .vstage img{object-position:50% 100%}
+  .hero-shade{background:linear-gradient(180deg,rgba(7,21,47,.78) 0%,rgba(7,21,47,.45) 38%,rgba(7,21,47,.05) 58%,rgba(7,21,47,.15) 80%,rgba(7,21,47,.85) 100%)!important}
+  .hero-in{justify-content:flex-start;padding-top:108px;padding-bottom:0}
+  .hero h1{font-size:clamp(34px,9.6vw,44px)}
+  .eyebrow{margin-bottom:14px;font-size:12.5px}
+  .hero-lead{font-size:14.5px;line-height:1.75;margin:14px 0 22px;color:rgba(255,255,255,.9)}
+  .hero-cta .btn{padding:12px 20px;font-size:14px}
+  .vs-tag{top:auto;bottom:40%;font-size:11px;padding:5px 12px}
+  .vs-concept{top:auto;bottom:96px}
+  .hero-bottom{padding-inline-start:78px;bottom:30px}
+  .vs-hint{font-size:11.5px;line-height:1.6}
+}
+/* contact: keep the e-mail on one line */
+@media (max-width:700px){
+  .ct-lines>*{flex-direction:column;gap:6px}
+  .ct-lines b{text-align:start;word-break:normal;overflow-wrap:anywhere;font-size:15px}
+}

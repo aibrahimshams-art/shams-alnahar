@@ -6,8 +6,8 @@ const EN = {
   heroEyebrow:"Building Contracting · Dubai · Since 2016",
   heroTitle:"Building homes that last for generations",
   heroLead:"From approved drawings to handing over the keys: construction, MEP and finishing to a standard worthy of your name, under one management.",
-  ctaStart:"Start your project", ctaMore:"Discover us", scroll:"SCROLL",
-  vsBuild:"Under construction", vsDone:"Handed over", vsHint:"Hover or swipe across the image to see the villa before and after handover",
+  ctaStart:"Start your project with us", ctaMore:"Discover us", scroll:"Explore",
+  vsBuild:"Under construction", vsDone:"After handover", vsConcept:"Illustrative concept", sndOn:"Play music", sndOff:"Mute music", vsHint:"Hover or swipe across the image to see the villa before and after handover",
   badge:"years of building in Dubai",
   aKicker:"About us", aTitle:"Your building partner, from the first stone to the final touch.",
   aP1:"Shams Al Nahar Contracting was established in Dubai in 2016. We execute residential and commercial projects of every scale, in line with our clients' requirements, on time and within the agreed budget.",
@@ -18,7 +18,7 @@ const EN = {
   s2t:"MEP Works", s2p:"HVAC, water supply, electrical, drainage, fire alarm and fire-fighting systems.",
   s3t:"Interior Fit-out", s3p:"Interior finishing and fit-out for villas, offices, clinics and restaurants.",
   s4t:"Project Management", s4p:"Space planning, construction management and coordination with consultants and authorities.",
-  s5t:"Low Current & Smart Home", s5p:"CCTV, smart home systems, structured cabling and telephone systems.",
+  s5t:"Low Current & Smart Home", s5p:"CCTV, smart home systems, networks and cabling and telephone systems.",
   s6t:"Annexes & Renovation", s6p:"Annexes, majlis and service blocks, plus repair and extension of existing villas.",
   prKicker:"Our approach", prTitle:"Five stages, one commitment to quality.",
   p1t:"Excavation & Foundations", p1p:"Excavation, footings and waterproofing according to the soil report and approved structural drawings.",
@@ -29,16 +29,15 @@ const EN = {
   hKicker:"Housing programme villas", hTitle:"A trusted partner in building citizens' homes.",
   hP:"We build citizens' villas financed by the Mohammed Bin Rashid Housing Establishment and the Sheikh Zayed Housing Programme, according to approved drawings and technical requirements, managing payment stages and reports with the consultant through to the completion certificate.",
   h1:"Experience with the Establishment's procedures and payment stages", h2:"Coordination with the consultant, Dubai Municipality and DEWA", h3:"Annexes and extensions to existing villas",
-  hCta:"Talk to us about your villa",
+  hCta:"Consult us about your villa",
   exKicker:"Expertise", exTitle:"Experience in every type of project.", exNote:"From private villas to buildings, clinics and warehouses, in Dubai and beyond.",
   ty1:"Private villas", ty2:"Housing programme villas", ty3:"Residential & commercial buildings", ty4:"Clinics & medical centres", ty5:"Restaurants & offices", ty6:"Warehouses & labour accommodation",
-  filmCap:"Watch the company film",
   cKicker:"Contact us", cTitle:"Let's build your next project together.", cP:"Tell us about your project and our team will get back to you shortly.",
   lMail:"E-mail", lWa:"WhatsApp", lLoc:"Location", cCity:"Dubai, United Arab Emirates",
   fTitle:"Request a quotation", fName:"Name", fType:"Project type", fMsg:"Project details", fSend:"Send via WhatsApp",
   o1:"New villa", o2:"MBRHE housing villa", o3:"Annex or extension", o4:"Residential or commercial building", o5:"Interior fit-out", o6:"Other",
   fAbout:"Shams Al Nahar Contracting — building contracting and electromechanical works in Dubai since 2016.",
-  fcLinks:"Quick links", fcServices:"Services", fcContact:"Contact us", imgNote:"Images are for illustration",
+  fcLinks:"Quick links", fcServices:"Services", fcContact:"Contact us",
   ftCta:"Have a project in mind? Let's make it real.", ftCtaBtn:"Request a quotation",
   legal:"Shams Al Nahar Contracting", rights:"All rights reserved"
 };
@@ -49,15 +48,6 @@ Object.assign(EN, {
   pjNoteC:"Approved 3D design of a day-surgery centre we executed in Dubai.",
   imgNote:"Some images are illustrative; project photos are from our own sites"
 });
-Object.assign(EN, {
-  ceKicker:"Completion certificates", ceTitle:"Delivered projects, officially certified.",
-  ceP:"Completion certificates issued by Dubai government authorities in the name of Shams Al Nahar Building Contracting, after meeting the authority's requirements.",
-  ceL1:"Authority", ceV1:"General Directorate of Civil Defence — Dubai",
-  ceL2:"Certificate", ceV2:"Building Completion Certificate",
-  ceL3:"Project", ceV3:"Villa converted to a clinic — Jumeirah 1",
-  ceL4:"Issue date", ceNote:"Owner names and plot numbers are hidden to protect our clients' privacy.",
-  ceTag:"View full certificate", nCerts:"Certificates"
-});
 const PJ_NOTE = { v:["صور حديثة من مواقعنا في دبي، من أغسطس إلى نوفمبر 2026.", EN.pjNoteV], c:["التصميم ثلاثي الأبعاد المعتمد لمركز جراحة اليوم الواحد الذي نفّذناه في دبي.", EN.pjNoteC] };
 const PJ = {
   v: [["v03","فيلا سكنية — واجهة كلاسيكية","Residential villa — classic façade"],["v11","فيلا حديثة — دبي","Modern villa — Dubai"],["v07","فيلا سكنية — أعمال التشطيب","Residential villa — finishing works"],
@@ -67,7 +57,7 @@ const PJ = {
       ["v01","الهيكل الخرساني","Concrete structure"],["v15","الهيكل والبلوك","Structure & blockwork"],["v04","أعمال البلوك والهيكل","Blockwork & structure"]],
   c: [["c01","الاستقبال","Reception"],["c02","الاستقبال والسلم","Reception & staircase"],["c03","منطقة الانتظار","Waiting area"],["c04","مكتب الاستقبال","Reception desk"],
       ["c05","عيادة الأسنان","Dental clinic"],["c06","عيادة الأسنان","Dental clinic"],["c07","غرفة العلاج","Treatment room"],["c08","غرفة الفحص","Examination room"],
-      ["c09","الممرات","Corridor"],["c10","استراحة","Lounge"],["c11","الواجهة الخارجية","Exterior"]]
+      ["c09","الممرات","Corridors"],["c10","استراحة","Lounge"],["c11","الواجهة الخارجية","Exterior"]]
 };
 const MQ = {
   ar:["التصميم والبناء","الأعمال الكهروميكانيكية","التشطيبات الداخلية","فلل الإسكان","إدارة المشاريع","المنزل الذكي"],
@@ -84,8 +74,9 @@ if (lang === "en") {
   document.documentElement.lang = "en"; document.documentElement.dir = "ltr";
   $$("[data-i]").forEach(el => { const t = EN[el.dataset.i]; if (t) el.textContent = t; });
   document.title = "Shams Al Nahar Contracting | شمس النهار للمقاولات";
-  $("#vid source").setAttribute("src", "../video/intro-en.mp4");
+  $("#vid source").setAttribute("src", "video/intro-en.mp4");
   $("#vid").setAttribute("poster", "../img/poster-en.jpg");
+  $("#vid").load();
 }
 $("#lang").textContent = lang === "ar" ? "EN" : "عربي";
 $("#lang").onclick = () => {
@@ -124,7 +115,7 @@ let pjSet = "v", lbIdx = 0;
 function renderPJ(t) {
   pjSet = t;
   pjGrid.innerHTML = PJ[t].map(([f, ar, en], i) =>
-    `<figure class="pj" data-i="${i}"><img src="../photos/projects/${f}.webp" alt="${RTL ? ar : en}" loading="lazy"><figcaption>${RTL ? ar : en}</figcaption></figure>`).join("");
+    `<figure class="pj" data-index="${i}"><img src="../photos/projects/${f}.webp" alt="${RTL ? ar : en}" loading="lazy"><figcaption>${RTL ? ar : en}</figcaption></figure>`).join("");
   $("#pjNote").textContent = PJ_NOTE[t][RTL ? 0 : 1];
   $$("#pjTabs button").forEach(b => b.classList.toggle("on", b.dataset.t === t));
   if (window.ScrollTrigger) ScrollTrigger.refresh();
@@ -134,7 +125,7 @@ function lbShow(i) {
   const L = PJ[pjSet]; lbIdx = (i + L.length) % L.length;
   $("img", lb).src = `../photos/projects/${L[lbIdx][0]}.webp`; $(".lb-c", lb).textContent = L[lbIdx][RTL ? 1 : 2];
 }
-pjGrid.onclick = e => { const f = e.target.closest(".pj"); if (!f) return; lbShow(+f.dataset.i); lb.classList.add("open"); };
+pjGrid.onclick = e => { const f = e.target.closest(".pj"); if (!f) return; lbShow(+f.dataset.index); lb.classList.add("open"); };
 lb.onclick = e => {
   if (e.target.closest(".lb-n")) return lbShow(lbIdx + (RTL ? -1 : 1));
   if (e.target.closest(".lb-p")) return lbShow(lbIdx + (RTL ? 1 : -1));
@@ -155,6 +146,13 @@ vid.muted = true;
 if ("IntersectionObserver" in window) {
   new IntersectionObserver(es => es.forEach(e => e.isIntersecting ? vid.play().catch(() => {}) : vid.pause()), { threshold: .25 }).observe(vid);
 } else { vid.play().catch(() => {}); }
+const snd = $("#snd"), sndL = $("span", snd);
+snd.onclick = () => {
+  vid.muted = !vid.muted;
+  if (!vid.muted) { vid.volume = .6; vid.play().catch(() => {}); }
+  snd.classList.toggle("is-on", !vid.muted); snd.setAttribute("aria-pressed", String(!vid.muted));
+  sndL.textContent = vid.muted ? (RTL ? "تشغيل الموسيقى" : EN.sndOn) : (RTL ? "كتم الموسيقى" : EN.sndOff);
+};
 
 /* nav */
 const nav = $("#nav"), links = $("#links"), burger = $("#burger");
@@ -220,7 +218,7 @@ function start() {
   tl.from(".hero .eyebrow", { y: 30, opacity: 0, duration: 1.2 })
     .from(".hero h1 .w>span", { yPercent: 110, duration: 1.5, stagger: .08 }, "-=.9")
     .from(".hero-lead", { y: 30, opacity: 0, duration: 1.2 }, "-=1.1")
-    .from(".hero-cta .btn", { y: 30, opacity: 0, duration: 1.1, stagger: .1 }, "-=1")
+    .fromTo(".hero-cta .btn", { y: 30, opacity: 0 }, { y: 0, opacity: 1, duration: 1.1, stagger: .1, clearProps: "opacity,transform" }, "-=1")
     .from(".hero-bottom", { opacity: 0, duration: 1.2 }, "-=.8")
     .from(".nav-in", { y: -30, opacity: 0, duration: 1.2 }, "-=1.4");
   gsap.to(".hero-in", { yPercent: 18, opacity: .2, ease: "none", scrollTrigger: { trigger: ".hero", start: "top top", end: "bottom top", scrub: true } });
@@ -297,10 +295,11 @@ function start() {
 function initFallback() {
   addEventListener("scroll", () => nav.classList.toggle("solid", scrollY > 80), { passive: true });
   const steps = $$("#steps li"), pvs = $$(".pv");
+  links.onclick = () => { links.classList.remove("open"); burger.classList.remove("x"); };
+  if (!("IntersectionObserver" in window)) { steps.forEach(x => x.classList.add("on")); pvs.forEach((x, j) => x.classList.toggle("on", j === 0)); return; }
   const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { const i = steps.indexOf(e.target);
     steps.forEach((x, j) => x.classList.toggle("on", j === i)); pvs.forEach((x, j) => x.classList.toggle("on", j === i)); $("#pvNum").textContent = String(i + 1).padStart(2, "0"); } }), { rootMargin: "-45% 0px -45% 0px" });
   steps.forEach(s => io.observe(s));
-  links.onclick = () => { links.classList.remove("open"); burger.classList.remove("x"); };
 }
 
 /* wait for hero image + fonts, max 1.6s */
