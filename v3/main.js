@@ -108,6 +108,10 @@ $("#form").onsubmit = e => {
   window.open(`${waBase}?text=${encodeURIComponent(msg)}`, "_blank", "noopener");
 };
 $("#yr").textContent = new Date().getFullYear();
+/* localized accessible labels */
+const A11Y = RTL ? { burger:"القائمة", x:"إغلاق", p:"السابق", n:"التالي", top:"إلى الأعلى", wa:"واتساب" }
+                 : { burger:"Menu", x:"Close", p:"Previous", n:"Next", top:"Back to top", wa:"WhatsApp" };
+[["#burger","burger"],[".lb-x","x"],[".lb-p","p"],[".lb-n","n"],[".to-top","top"],["#waFloat","wa"]].forEach(([s,k]) => { const el = $(s); if (el) el.setAttribute("aria-label", A11Y[k]); });
 
 /* projects gallery + lightbox */
 const pjGrid = $("#pjGrid"), lb = $("#lb");
