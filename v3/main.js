@@ -293,6 +293,7 @@ function start() {
 }
 
 function initFallback() {
+  document.documentElement.classList.add("no-motion");
   addEventListener("scroll", () => nav.classList.toggle("solid", scrollY > 80), { passive: true });
   const steps = $$("#steps li"), pvs = $$(".pv");
   links.onclick = () => { links.classList.remove("open"); burger.classList.remove("x"); };

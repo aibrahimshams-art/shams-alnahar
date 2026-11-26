@@ -295,8 +295,8 @@ html[dir=rtl] .to-top i{transform:translateY(2px) rotate(-45deg)}
 
 /* responsive */
 @media (max-width:1100px){
-  .links{position:fixed;inset:0;background:var(--navy);flex-direction:column;justify-content:center;align-items:center;gap:26px;opacity:0;pointer-events:none;transition:opacity .5s var(--ease)}
-  .links.open{opacity:1;pointer-events:auto}
+  .links{position:fixed;inset:0;background:var(--navy);flex-direction:column;justify-content:center;align-items:center;gap:26px;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .5s var(--ease),visibility 0s .5s}
+  .links.open{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .5s var(--ease)}
   .links a,.nav.solid .links a{color:#fff;font-size:26px;font-weight:300}
   .m-only{display:block}
   .burger{display:block;z-index:2}
@@ -374,8 +374,8 @@ html[dir=rtl] .to-top i{transform:translateY(2px) rotate(-45deg)}
 .pj figcaption{position:absolute;inset:auto 0 0;padding:34px 18px 14px;color:#fff;font:500 14px var(--h);background:linear-gradient(transparent,rgba(7,21,47,.82));opacity:0;transform:translateY(8px);transition:.5s var(--ease)}
 .pj:hover figcaption{opacity:1;transform:none}
 @keyframes pjIn{from{opacity:0;transform:translateY(18px)}}
-.lb{position:fixed;inset:0;z-index:300;background:rgba(7,21,47,.94);display:grid;place-items:center;opacity:0;pointer-events:none;transition:opacity .4s}
-.lb.open{opacity:1;pointer-events:auto}
+.lb{position:fixed;inset:0;z-index:300;background:rgba(7,21,47,.94);display:grid;place-items:center;opacity:0;visibility:hidden;pointer-events:none;transition:opacity .4s,visibility 0s .4s}
+.lb.open{opacity:1;visibility:visible;pointer-events:auto;transition:opacity .4s}
 .lb img{max-width:min(1400px,90vw);max-height:82vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.5)}
 .lb button{position:absolute;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;width:52px;height:52px;border-radius:50%;font-size:28px;line-height:1;cursor:pointer;transition:.3s}
 .lb button:hover{background:var(--royal)}
@@ -467,3 +467,12 @@ html[dir=ltr] .vs-tag.a{right:auto;left:max(24px,calc((100vw - 1320px)/2))}html[
   .ct-lines>*{flex-direction:column;gap:6px}
   .ct-lines b{text-align:start;word-break:normal;overflow-wrap:anywhere;font-size:15px}
 }
+
+/* no-motion fallback (reduced motion / GSAP missing): services become a normal swipe row */
+.no-motion .svc-pin{height:auto;padding-block:100px}
+.no-motion .svc-track{width:100%;overflow-x:auto;transform:none!important;scroll-snap-type:x mandatory}
+.no-motion .svc{scroll-snap-align:start}
+.no-motion .svc p{max-height:none;opacity:1}
+/* short or very narrow phones: keep tags below the hero text */
+@media (max-width:760px) and (max-height:720px){.hero{min-height:780px}}
+@media (max-width:380px){.hero{min-height:880px}.vs-tag{bottom:34%}}
